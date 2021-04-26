@@ -112,7 +112,7 @@ jobs:
           echo "CACHE_KEY=`md5sum CACHE_KEY.txt | awk '{ print $1 }'`" >> $GITHUB_ENV
 
       - name: Choco installs.
-        run: choco install --no-progress -y yasm jom ninja
+        run: choco install --no-progress -y nasm yasm jom ninja
 
       - name: Patches.
         shell: bash
