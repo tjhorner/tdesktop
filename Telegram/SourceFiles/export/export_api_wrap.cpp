@@ -1650,7 +1650,7 @@ void ApiWrap::requestChatMessages(
 	const auto realSplitIndex = (splitIndex >= 0)
 		? splitIndex
 		: (splitsCount + splitIndex);
-	if (_chatProcess->info.onlyMyMessages) {
+	if (false) {
 		splitRequest(realSplitIndex, MTPmessages_Search(
 			MTP_flags(MTPmessages_Search::Flag::f_from_id),
 			realPeerInput,
